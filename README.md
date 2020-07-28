@@ -1,2 +1,0 @@
-# jaguar
-WSGI App
