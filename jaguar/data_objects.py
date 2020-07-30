@@ -8,12 +8,14 @@ class Function:
     "Holds information about a function"
     name: str
     bytecode: bytes
+    method: str
 
 
 @dataclass
 class Controller:
     "Holds information about an application controller"
     application: str
+    name: str
     version: int
     module_path: str
     bytecode: bytes

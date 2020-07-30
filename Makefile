@@ -83,3 +83,6 @@ dist: clean ## builds source and wheel package
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
+
+dev:
+	@gunicorn jaguar.bootstrap -b :8000 --reload --log-level=debug
